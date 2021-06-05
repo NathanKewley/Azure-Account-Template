@@ -1,0 +1,9 @@
+---
+bicep_path: virtual-network/virtualNetworkSpoke.bicep
+
+params:
+  name: Services-Prod
+  location: australiaeast
+  addressPrefixs: "['10.200.0.0/16']"
+  subnetName: Services-Prod
+  subnetAddressPrefix: 10.200.0.0/16

@@ -1,0 +1,13 @@
+---
+bicep_path: virtual-network/peeringConnectionSpoke.bicep
+
+params:
+  peeringName: shared-services-prod-peer-to-cloudops-prod
+  hubNetworkName: Ref:shared-services-prod.rg-networking.virtual-network:networkName
+  hubNetworkId: Ref:shared-services-prod.rg-networking.virtual-network:virtualNetworkId
+  spokeNetworkId: Ref:cloudops-prod.rg-networking.virtual-network:virtualNetworkId
+  spokeNetworkName: Ref:cloudops-prod.rg-networking.virtual-network:networkName
+  allowVirtualNetworkAccess: "true"
+  allowForwardedTraffic: "true"
+  allowGatewayTransit: "false"
+  useRemoteGateways: "false"

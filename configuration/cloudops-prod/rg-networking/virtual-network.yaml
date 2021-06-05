@@ -1,0 +1,9 @@
+---
+bicep_path: virtual-network/virtualNetworkSpoke.bicep
+
+params:
+  name: CloudOps-Prod
+  location: australiaeast
+  addressPrefixs: "['10.100.0.0/16']"
+  subnetName: CloudOps-Prod
+  subnetAddressPrefix: 10.100.0.0/16

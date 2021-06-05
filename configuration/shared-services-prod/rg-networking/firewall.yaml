@@ -1,0 +1,11 @@
+---
+bicep_path: virtual-network/firewall.bicep
+
+params:
+  firewallName: hub-firewall
+  location: australiaeast
+  firewallIPSKU: Standard
+  firewallSKUName: AZFW_VNet
+  firewallSKUTier: Standard
+  subnetId: Ref:shared-services-prod.rg-networking.virtual-network:virtualNetworkId
+  firewallSubnetName: Ref:shared-services-prod.rg-networking.virtual-network:firewallSubnetName
