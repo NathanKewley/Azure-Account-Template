@@ -1,8 +1,6 @@
 param peeringName string
-param hubNetworkName string
 param hubNetworkId string
 param spokeNetworkName string
-param spokeNetworkId string
 param allowVirtualNetworkAccess bool
 param allowForwardedTraffic bool
 param allowGatewayTransit bool
